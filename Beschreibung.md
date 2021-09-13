@@ -6,4 +6,8 @@
 
 - **Anforderungsanalyse**
 
-Hier wird analysiert was das Programm machen soll.
+    Hier wird analysiert was das Programm machen soll.
+
+- **Modellierung**
+
+    Hier anhand der Anforderungsanalyse, erstellst du ein Klassendiagramm (z.B. mit UML), was du naher benutzt wist
