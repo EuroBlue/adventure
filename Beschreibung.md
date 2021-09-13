@@ -4,6 +4,6 @@
 
 # Teilung in verschiedene Phasen
 
-- Anforderungsanalyse
+- **Anforderungsanalyse**
 
 Hier wird analysiert was das Programm machen soll.
