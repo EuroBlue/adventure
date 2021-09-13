@@ -11,3 +11,13 @@
 - **Modellierung**
 
     Hier anhand der Anforderungsanalyse, erstellst du ein Klassendiagramm (z.B. mit UML), was du naher benutzt wist
+
+- **Implementierung**
+
+    - Schreiben von Tests
+
+        Hier muesst ihr Tests anhand der Struktur die ihr in der Modellierung beschlossen habt.
+    
+    - Umsetzung der Modelierung
+
+        Hier muest ihr Code schreiben anhand der Struktur die ihr in der Modellierung beschlossen habt und die auch dafor geschriebene faelle erfüllt.
