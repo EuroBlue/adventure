@@ -7,7 +7,8 @@
 - [X] **Modellierung**
 
 - [ ] **Implementierung**
+  - [X] **Grundgeruest erstellen** 
   - [ ] **Tests Schreiben**
   - [ ] **Code Schreiben**
 
-- [ ] Debuging
+- [ ] **Debuging**
