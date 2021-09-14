@@ -4,8 +4,6 @@
 
 - [X] **Modellierung**
 
-- [X] **Modellierung**
-
 - [ ] **Implementierung**
   - [X] **Grundgeruest erstellen** 
   - [X] **Tests Schreiben**
