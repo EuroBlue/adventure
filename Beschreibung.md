@@ -33,7 +33,7 @@
     Man soll dieses modell für eine Software mehrmals durch gehen.
     Mit jeder neuen liste von Funktionen die man hinzufuegen soll, wird dieses modell verwendet.
 
-## Kritik
+# Kritik
 
 - **Fehler bei der Anforderungsanalyse sind spaet erkennbar**
 
