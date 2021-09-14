@@ -8,7 +8,7 @@
 
 - [ ] **Implementierung**
   - [X] **Grundgeruest erstellen** 
-  - [ ] **Tests Schreiben**
+  - [X] **Tests Schreiben**
   - [ ] **Code Schreiben**
 
 - [ ] **Debuging**
