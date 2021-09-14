@@ -8,7 +8,7 @@ er muss schauen wohin er gehen kann.
 er muss checken wenn er an einene Spezielen Ort kommt, dass er merkt das das Spiel gewonnen wurde.
 
 ## Wir müssen Folgende Orte Hinzufügen:
-- Parkplatz(StartOrt)
+- Parkplatz(Ziel)
 
 - Eingang
 
@@ -24,6 +24,6 @@ er muss checken wenn er an einene Spezielen Ort kommt, dass er merkt das das Spi
 
 - Grillplatz
 
-- Badesee(Ziel)
+- Badesee(StartOrt)
 
 ## Was machen Sachen?:

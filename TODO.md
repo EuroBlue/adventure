@@ -10,5 +10,11 @@
   - [X] **Grundgeruest erstellen** 
   - [X] **Tests Schreiben**
   - [ ] **Code Schreiben**
+    - [ ] **Game**
+      - [X] **Backend**
+      - [ ] **Frontend**
+    - [ ] **Ort**
+    - [ ] **Player**
+    - [ ] **MainClass**
 
 - [ ] **Debuging**
