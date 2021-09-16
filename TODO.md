@@ -12,7 +12,7 @@
       - [X] **Backend**
       - [ ] **Frontend**
     - [ ] **Ort**
-    - [ ] **Player**
+    - [X] **Player**
     - [ ] **MainClass**
 
 - [ ] **Debuging**

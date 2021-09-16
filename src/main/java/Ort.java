@@ -7,7 +7,7 @@ public class Ort {
 
     public Ort(String name)
     {
-
+        name = name;
     }
     public void printInfo()
     {
