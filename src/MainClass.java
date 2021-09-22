@@ -6,7 +6,7 @@ public class MainClass {
         while (!g.gewonnen())
         {
             g.user.standort.printInfo();
-            //System.out.print("s");
+            System.out.print("s");;
             g.user.walk(input());
             if (g.gewonnen()==true)
             {

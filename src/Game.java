@@ -54,47 +54,4 @@ public class Game {
         }
     return false;
     }
-    public void info()
-    {
-        if (user.getStandort()!=null)
-        {
-            System.out.println("Standort: "+ user.getStandort().getname());
-        }
-        else
-        {
-            System.out.println("Standort: dark forest");
-        }
-        if (user.getStandort().links!=null)
-        {
-            System.out.println("links: "+ user.getStandort().links.getname());
-        }
-        else if (user.getStandort()!=null)
-        {
-            System.out.println("links: dark forest");
-        }
-        if (user.getStandort().rechts!=null)
-        {
-            System.out.println("rechts: "+ user.getStandort().rechts.getname());
-        }
-        else if (user.getStandort()!=null)
-        {
-            System.out.println("rechts: dark forest");
-        }
-        if (user.getStandort().oben!=null)
-        {
-            System.out.println("oben: "+ user.getStandort().oben.getname());
-        }
-        else if (user.getStandort()!=null)
-        {
-            System.out.println("oben: dark forest");
-        }
-        if (user.getStandort().unten!=null)
-        {
-            System.out.println("unten: "+ user.getStandort().unten.getname());
-        }
-        else if (user.getStandort()!=null)
-        {
-            System.out.println("unten: dark forest");
-        }
-    }
 }
