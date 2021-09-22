@@ -21,7 +21,7 @@ public class Player {
                 break;
             case "rechts" :
                 if(standort.rechts != null){
-                    standort = standort.links;
+                    standort = standort.rechts;
                     System.out.println("du bis nun am Standort: "+  standort.getname());
                 }else{
                     System.out.println("Nicht zulaessige Bewegung");
@@ -29,7 +29,7 @@ public class Player {
                 break;
             case "oben" :
                 if(standort.oben != null){
-                    standort = standort.links;
+                    standort = standort.oben;
                     System.out.println("du bis nun am Standort: "+  standort.getname());
                 }else{
                     System.out.println("Nicht zulaessige Bewegung");
@@ -37,7 +37,7 @@ public class Player {
                 break;
             case "unten" :
                 if(standort.unten != null){
-                    standort = standort.links;
+                    standort = standort.unten;
                     System.out.println("du bis nun am Standort: "+  standort.getname());
                 }else{
                     System.out.println("Nicht zulaessige Bewegung");
