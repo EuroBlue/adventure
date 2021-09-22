@@ -11,4 +11,11 @@ public class GameTest
         Game g=new Game();
         assertNotNull(g.user);
     }
+    @Test
+    public void testgewonnen()
+    {
+        Ort parkplatz=new Ort("Parkplatz");
+        Player p=new Player(parkplatz);
+        assertEquals(parkplatz,p.getStandort());
+    }
 }

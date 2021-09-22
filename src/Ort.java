@@ -11,6 +11,10 @@ public class Ort {
     }
     public void printInfo()
     {
-
+        
+    }
+    public String getname()
+    {
+        return name;
     }
 }

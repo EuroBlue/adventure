@@ -14,7 +14,7 @@ public class Player {
             case "links":
                 if(standort.links != null){
                     standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort);
+                    System.out.println("du bis nun am Standort: "+  standort.getname());
                 }else{
                     System.out.println("Nicht zulaessige Bewegung");
                 }
@@ -22,7 +22,7 @@ public class Player {
             case "rechts" :
                 if(standort.rechts != null){
                     standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort);
+                    System.out.println("du bis nun am Standort: "+  standort.getname());
                 }else{
                     System.out.println("Nicht zulaessige Bewegung");
                 }
@@ -30,7 +30,7 @@ public class Player {
             case "oben" :
                 if(standort.oben != null){
                     standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort);
+                    System.out.println("du bis nun am Standort: "+  standort.getname());
                 }else{
                     System.out.println("Nicht zulaessige Bewegung");
                 }
@@ -38,12 +38,16 @@ public class Player {
             case "unten" :
                 if(standort.unten != null){
                     standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort);
+                    System.out.println("du bis nun am Standort: "+  standort.getname());
                 }else{
                     System.out.println("Nicht zulaessige Bewegung");
                 }
                 break;
             default: System.out.println("Nicht zulaessige Bewegung");
         }
+    }
+    public Ort getStandort()
+    {
+        return standort;
     }
 }
