@@ -1,21 +1,22 @@
-import java.util.Scanner;
+import java.io.Console;
 public class MainClass {
     public static void main(String[] args) throws Exception {
         Game g=new Game();
-        Scanner sc=new Scanner(System.in);
         System.out.println("Du bist beim Baden eingedöst, langsam wird es dunkel.\nBevor nachts zwielichtige Gestalten kommen,\nsolltest Du schnell zu Deinem Auto...");
-        while (g.gewonnen()!=true||g.user.getStandort()==null)
+        while (!g.gewonnen())
         {
-            g.info();
-            g.user.walk(sc.nextLine());
+            g.user.standort.printInfo();
+            System.out.print("s");;
+            g.user.walk(input());
             if (g.gewonnen()==true)
             {
                 System.out.println("Du hast gewonnen!\nDas Spiel ist vorbei.");
             }
-            else if (g.user.getStandort()==null)
-            {
-                System.out.println("Du hast verloren!\nDu wurdest im Wald von einem Bären gefressen.");
-            }
         }
+    }
+    public static String input()
+    {
+        Console console = System.console();
+        return console.readLine();
     }
 }

@@ -4,15 +4,15 @@
 
 - [X] **Modellierung**
 
-- [ ] **Implementierung**
+- [X] **Implementierung**
   - [X] **Grundgeruest erstellen** 
   - [X] **Tests Schreiben**
-  - [ ] **Code Schreiben**
-    - [ ] **Game**
+  - [X] **Code Schreiben**
+    - [X] **Game**
       - [X] **Backend**
-      - [ ] **Frontend**
-    - [ ] **Ort**
-    - [ ] **Player**
-    - [ ] **MainClass**
+      - [X] **Frontend**
+    - [X] **Ort**
+    - [X] **Player**
+    - [X] **MainClass**
 
 - [ ] **Debuging**

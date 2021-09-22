@@ -5,45 +5,44 @@ public class Player {
 
     public Player(Ort o)
     {
-        standort = o;//this just creates the person at a certing starting point
+        standort = o;
     }
     public void walk(String s)
     {
         s = s.toLowerCase();
         switch (s){
             case "links":
-                if(standort.links != null){
+                if(standort.links != null)
+                {
                     standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort.getname());
-                }else{
-                    System.out.println("Nicht zulaessige Bewegung");
+                }
+                else
+                {
+                    System.out.println("Nicht zugelassene Bewegung");
                 }
                 break;
             case "rechts" :
                 if(standort.rechts != null){
-                    standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort.getname());
+                    standort = standort.rechts;
                 }else{
-                    System.out.println("Nicht zulaessige Bewegung");
+                    System.out.println("Nicht zugelassene Bewegung");
                 }
                 break;
             case "oben" :
                 if(standort.oben != null){
-                    standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort.getname());
+                    standort = standort.oben;
                 }else{
-                    System.out.println("Nicht zulaessige Bewegung");
+                    System.out.println("Nicht zugelassene Bewegung");
                 }
                 break;
             case "unten" :
                 if(standort.unten != null){
-                    standort = standort.links;
-                    System.out.println("du bis nun am Standort: "+  standort.getname());
+                    standort = standort.unten;
                 }else{
-                    System.out.println("Nicht zulaessige Bewegung");
+                    System.out.println("Nicht zugelassene Bewegung");
                 }
                 break;
-            default: System.out.println("Nicht zulaessige Bewegung");
+            default: System.out.println("Nicht zugelassene Bewegung");
         }
     }
     public Ort getStandort()
