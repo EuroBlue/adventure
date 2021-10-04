@@ -1,18 +1,37 @@
 # Was ist zu tun?
 
-- [X] **Anforderungsanalyse**
+- [X] **Phase 1**
 
-- [X] **Modellierung**
+  - [X] **Anforderungsanalyse**
 
-- [ ] **Implementierung**
-  - [X] **Grundgeruest erstellen** 
-  - [X] **Tests Schreiben**
-  - [ ] **Code Schreiben**
-    - [ ] **Game**
-      - [X] **Backend**
-      - [ ] **Frontend**
-    - [ ] **Ort**
-    - [ ] **Player**
-    - [ ] **MainClass**
+  - [X] **Modellierung**
 
-- [ ] **Debuging**
+    - [X] **Grundgeruest erstellen** 
+    - [X] **Tests Schreiben**
+    - [X] **Code Schreiben**
+      - [X] **Game**
+        - [X] **Backend**
+        - [X] **Frontend**
+      - [X] **Ort**
+      - [X] **Player**
+      - [X] **MainClass**
+
+  - [X] **Debuging**
+
+- [ ] **Phase 2**
+
+  - [ ] **Anforderungsanalyse**
+
+  - [ ] **Modellierung**
+
+    - [ ] **Grundgeruest erstellen** 
+    - [ ] **Tests Schreiben**
+    - [ ] **Code Schreiben**
+      - [ ] **Game**
+        - [ ] **Backend**
+        - [ ] **Frontend**
+      - [ ] **Ort**
+      - [ ] **Player**
+      - [ ] **MainClass**
+
+  - [ ] **Debuging**
