@@ -20,18 +20,10 @@
 
 - [ ] **Phase 2**
 
-  - [ ] **Anforderungsanalyse**
+  - [X] **Anforderungsanalyse**
 
   - [ ] **Modellierung**
 
-    - [ ] **Grundgeruest erstellen** 
-    - [ ] **Tests Schreiben**
-    - [ ] **Code Schreiben**
-      - [ ] **Game**
-        - [ ] **Backend**
-        - [ ] **Frontend**
-      - [ ] **Ort**
-      - [ ] **Player**
-      - [ ] **MainClass**
+
 
   - [ ] **Debuging**

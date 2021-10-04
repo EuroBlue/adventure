@@ -1,6 +1,6 @@
 # Text game:
 
-## Analysis :
+<!-- ## Analysis :
 
 Wir müssen eine Person erstellen welche zwischen Orte sich bewegen kann.
 Das Programm soll Zurück geben wohin er laufen kann.
@@ -26,4 +26,14 @@ er muss checken wenn er an einene Spezielen Ort kommt, dass er merkt das das Spi
 
 - Badesee(StartOrt)
 
-## Was machen Sachen?:
+## Was machen Sachen?: -->
+
+## Anaysis:
+
+- **Multiplayer**
+    - **Server erstellen**
+    - **IP to GameCode**
+    - **Auto start**
+    - **Verbindung**
+    - **Pakete schicken**
+    - **Win check**
