@@ -7,7 +7,7 @@ public class GameCodeToIp{
     public GameCodeToIp(){
 
     }
-    public static InetAddress convertoInet(String input) {
+    public static String convertoInet(String input) {
         String finalString = "";
         String[] splitchars = input.split("");//splits the string into single characters
 
@@ -40,13 +40,7 @@ public class GameCodeToIp{
         }
         //final everything
         finalString = finalString.substring(0, finalString.length() -1);//just removes the last dot at the end of sentence
-        try {
-            return InetAddress.getByName(finalString);
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-        //this should not be triggered, but I still have to be here because I have a try catch statement because there is a possibility for there to be nothing
-        return null;
+        return finalString;
     }
 
 
