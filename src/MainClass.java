@@ -24,8 +24,8 @@ public class MainClass {
         while(!client.running)
         {
             System.out.println("Du bist nicht verbunden!");
-            System.out.print("Gebe den Host ein: ");
-            client.host=input();
+            System.out.print("Gebe den GameCode ein: ");
+            client.host=GameCodeToIp.convertoInet(input()).toString();
             System.out.print("Gebe das Port ein: ");
             client.port=Integer.parseInt(input());
             client.connect();

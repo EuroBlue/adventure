@@ -10,7 +10,6 @@ public class Connection implements Runnable{
     private Socket socket;
     private ObjectOutputStream out;
     private ObjectInputStream in;
-    private int id;
     private ServerListener listner;
 
     public static ArrayList<Connection> connections=new ArrayList<Connection>();
@@ -18,7 +17,6 @@ public class Connection implements Runnable{
     public Connection(Socket socket)
     {
         this.socket=socket;
-        this.id=0;
         try {
             out=new ObjectOutputStream(socket.getOutputStream());
             in=new ObjectInputStream(socket.getInputStream());

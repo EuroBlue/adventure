@@ -14,6 +14,7 @@ public class Server implements Runnable{
         try
         {
             serverSocket=new ServerSocket(port);
+            System.out.println(toGameCode.conversion(serverSocket.getInetAddress()));
         }
         catch (IOException e) {
             e.printStackTrace();
