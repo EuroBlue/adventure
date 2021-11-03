@@ -1,4 +1,4 @@
-import java.io.Console;
+import java.util.Scanner;
 
 import server.Server;
 public class MainClass {
@@ -64,7 +64,7 @@ public class MainClass {
     }
     public static String input()
     {
-        Console console = System.console();
-        return console.readLine();
+        Scanner myObj = new Scanner(System.in);
+        return myObj.nextLine();
     }
 }
