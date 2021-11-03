@@ -1,10 +1,10 @@
-import java.util.Locale;
-
 public class Player {
     public Ort standort;
-
-    public Player(Ort o)
+    public String nick;
+    public int id;
+    public Player(Ort o, String n)
     {
+        nick=n;
         standort = o;
     }
     public void walk(String s)

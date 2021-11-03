@@ -9,7 +9,8 @@ public class Game {
     public Ort toiletten;
     public Ort grillplatz;
     public Ort badesee;
-    public Game()
+    public boolean zu_ende=false;
+    public Game(String name)
     {
         ziel=new Ort("Parkplatz");
         eingang=new Ort("Eingang");
@@ -26,11 +27,7 @@ public class Game {
         connectOrt(kiosk, spielplatz, toiletten, streichelzoo, grillplatz);
         connectOrt(grillplatz, null, badesee, kiosk, null);
 
-        user=new Player(badesee);
-    }
-    public void play()
-    {
-        
+        user=new Player(badesee,name);
     }
     public void connectOrt(Ort main,Ort l, Ort r, Ort u, Ort d)
     {
@@ -53,5 +50,9 @@ public class Game {
             return true;
         }
     return false;
+    }
+    public void end()
+    {
+        this.zu_ende=true;
     }
 }

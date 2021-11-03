@@ -9,7 +9,7 @@ public class PlayerTest
     public void testPlayer()
     {
         Ort locus=new Ort("name");
-        Player player=new Player(locus);
+        Player player=new Player(locus,"test");
         assertNotNull(player);
         assertEquals(locus, player.standort);
     }
@@ -19,7 +19,7 @@ public class PlayerTest
         Ort _1=new Ort("1");
         Ort _2=new Ort("2");
         _1.links=_2;
-        Player player=new Player(_1);
+        Player player=new Player(_1,"test");
         player.walk("links");
         assertEquals(_2, player.standort);
         player.walk("links");
