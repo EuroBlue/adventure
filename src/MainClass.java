@@ -54,7 +54,7 @@ public class MainClass {
         {
             System.out.println("Dein Server ist nicht gestartet!");
             System.out.print("Gebe day Port ein: ");
-            server.port=Integer.parseInt(input());
+            server=new Server(Integer.parseInt(input()));
             server.start();
             while(server.running)
             {

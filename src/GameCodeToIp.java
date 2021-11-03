@@ -40,7 +40,6 @@ public class GameCodeToIp{
         }
         //final everything
         finalString = finalString.substring(0, finalString.length() -1);//just removes the last dot at the end of sentence
-        System.out.println("final InetAddress as String:" + finalString);
         try {
             return InetAddress.getByName(finalString);
         } catch (UnknownHostException e) {

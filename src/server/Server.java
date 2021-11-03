@@ -1,7 +1,9 @@
 package server;
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.UnknownHostException;
 public class Server implements Runnable{
     public int port;
     private ServerSocket serverSocket;
@@ -14,7 +16,6 @@ public class Server implements Runnable{
         try
         {
             serverSocket=new ServerSocket(port);
-            System.out.println(toGameCode.conversion(serverSocket.getInetAddress()));
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -31,12 +32,20 @@ public class Server implements Runnable{
     public void run()
     {
         running=true;
+        try {
+            toGameCode.conversion(serverSocket.getInetAddress().getLocalHost());
+            System.out.println(InetAddress.getLocalHost().toString());
+        } catch (UnknownHostException e1) {
+            e1.printStackTrace();
+        }
         while(running)
         {
             try
             {
+                System.out.println("versuch");
                 Socket socket=serverSocket.accept();
                 InitSocket(socket);
+                System.out.println("Es leuft");
             }
             catch (IOException e)
             {
