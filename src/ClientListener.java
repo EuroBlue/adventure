@@ -8,5 +8,9 @@ public class ClientListener {
             System.out.println(packet.name+" hat gewonnnen.");
             MainClass.g.end();
         }
+        else if (p instanceof GameStartPacket)
+        {
+            MainClass.started=true;
+        }
     }
 }

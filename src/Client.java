@@ -26,17 +26,23 @@ public class Client implements Runnable{
 
     public boolean connect()
     {
+        System.out.println("Connecting...");
         try
         {
             socket=new Socket(host,port);
+            System.out.println("Socket connected");
             out=new ObjectOutputStream(socket.getOutputStream());
+            System.out.println("Output esteblished");
             in=new ObjectInputStream(socket.getInputStream());
+            System.out.println("Input esteblished");
             AddConnectionPacket packet=new AddConnectionPacket(MainClass.g.user.nick);
             sendObject(packet);
-            new Thread().start();
-        } 
+            System.out.println("Sending handshake");
+            new Thread(this).start();
+        }
         catch (ConnectException e)
         {
+            System.out.println("ConnectException");
             return false;
         }
         catch (IOException e)
@@ -74,9 +80,11 @@ public class Client implements Runnable{
 
     @Override
     public void run() {
+        System.out.println("Starting");
         try
         {
             running=true;
+            System.out.println("Started");
             while(running)
             {
                 try

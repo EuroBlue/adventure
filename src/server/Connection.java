@@ -17,6 +17,7 @@ public class Connection implements Runnable{
     public Connection(Socket socket)
     {
         this.socket=socket;
+        this.listner=new ServerListener();
         try {
             out=new ObjectOutputStream(socket.getOutputStream());
             in=new ObjectInputStream(socket.getInputStream());

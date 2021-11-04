@@ -22,7 +22,7 @@ public class Server implements Runnable{
         }
     }
 
-    public void start()
+    public void boot()
     {
         new Thread(this).start();
     }
@@ -31,6 +31,7 @@ public class Server implements Runnable{
     @Override
     public void run()
     {
+        System.out.println("Server startet");
         running=true;
         try {
             toGameCode.conversion(serverSocket.getInetAddress().getLocalHost());
@@ -38,6 +39,7 @@ public class Server implements Runnable{
         } catch (UnknownHostException e1) {
             e1.printStackTrace();
         }
+        System.out.println("Server ist gestartet");
         while(running)
         {
             try
