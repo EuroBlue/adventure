@@ -11,6 +11,7 @@ public class ClientListener {
         else if (p instanceof GameStartPacket)
         {
             MainClass.started=true;
+            System.out.println("Er hat es gestartet "+MainClass.started);
         }
     }
 }

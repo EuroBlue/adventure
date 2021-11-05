@@ -1,4 +1,9 @@
 import java.io.Console;
+
+
+
+import server.Connection;
+import packets.GameStartPacket;
 import packets.WinPlayerPacket;
 import server.Server;
 public class MainClass {
@@ -44,13 +49,9 @@ public class MainClass {
                 e.printStackTrace();
             }
 
-            if(client.running)
+            while(client.running)
             {
                 System.out.println("Warte bis der Informatik got das spiel startet.");
-                while(!started)
-                {
-                    continue;
-                }
                 while(started)
                 {
                     System.out.println("Du bist beim Baden eingedoest, langsam wird es dunkel.\nBevor nachts zwielichtige Gestalten kommen,\nsolltest Du schnell zu Deinem Auto...");
@@ -87,7 +88,16 @@ public class MainClass {
             }
             while(server.running)
             {
-                continue;
+                System.out.println("starten? - start:");
+                String s=input();
+                if(s.toLowerCase().equals("start"))
+                {
+                    System.out.println("Spiel wird gestartet");
+                    for (int i = 0; i < Connection.connections.size(); i++) {
+                        Connection.connections.get(i).sendObject(new GameStartPacket());
+                    }
+                }
+                System.out.println("Spiel leuft!!");
             }
         }
     }
